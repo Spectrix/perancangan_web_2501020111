@@ -1,0 +1,138 @@
+/* Reset Basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier Prime', 'Consolas', 'Courier New', monospace;
+  background: radial-gradient(circle at top, #b50d18 0%, #4a0004 45%, #000000 90%);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* Container Utama */
+body > * {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Judul Utama (H1) */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Sub-Judul (H2) */
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+/* Paragraf & Teks Deskripsi */
+p {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #f0f0f0;
+}
+
+/* Styling Foto Profile */
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  margin: 15px 0 25px 0;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+/* List / Daftar (Skill & Riwayat Pendidikan) */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Link Sosial Media */
+a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsif Layar HP */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    width: 100%;
+    max-width: 300px;
+  }
+}
